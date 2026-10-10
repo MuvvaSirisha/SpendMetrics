@@ -1,0 +1,23 @@
+# SpendSense - Personal Finance Analytics Dashboard
+# Install all dependencies with: pip install -r requirements.txt
+
+# ── Web Application ────────────────────────────────────────────────────────────
+streamlit>=1.35.0           # The entire UI layer — pages, charts, tables, forms
+
+# ── Data Processing ────────────────────────────────────────────────────────────
+pandas>=2.2.0               # CSV reading, data cleaning, transformations
+numpy>=1.26.0               # Numerical calculations (averages, percentages, etc.)
+
+# ── Visualization ──────────────────────────────────────────────────────────────
+plotly>=5.22.0              # Interactive charts — bar, pie, line, scatter
+
+# ── Database ───────────────────────────────────────────────────────────────────
+mysql-connector-python>=8.3.0  # Connects Python to MySQL
+python-dotenv>=1.0.0           # Reads .env file for DB credentials
+
+# ── Testing ────────────────────────────────────────────────────────────────────
+pytest>=8.2.0               # Runs automated tests
+pytest-mock>=3.14.0         # Mocking helpers for tests
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dateutil>=2.9.0      # Flexible date parsing for messy CSV date formats

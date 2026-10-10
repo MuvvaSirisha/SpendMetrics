@@ -1,0 +1,60 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# .gitignore — Files that Git should NOT track.
+#
+# Why this matters:
+#   - ".env" contains real passwords. Never commit it.
+#   - "__pycache__" and ".pyc" files are generated automatically; not source code.
+#   - The SQLite database file contains user data; not source code.
+#   - Virtual environment folders are large and reproducible from requirements.txt.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── Database files ─────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── OS files ───────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE files ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ── Test artifacts ─────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Streamlit cache ────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual Environment
+venv/
+.env
+
+# Database
+data/*.db
+
